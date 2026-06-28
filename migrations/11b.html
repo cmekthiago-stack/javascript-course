@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>pra</title>
+</head>
+<body>
+  <script>
+    let array1 = [
+       'hello', 'world', 'search', 'good', 'search'
+    ]
+
+    let index = 1;
+
+    for( let i = 0; i < array1.length; i++) {
+      if (array1[i] === 'search') {
+        index = i;
+        break;
+      }
+    }
+
+    console.log(index);
+
+    array1 = ['not', 'found'];
+    index = -1; 
+    
+    for( let i = 0; i < array1.length; i++) {
+      if (array1[i] === 'search') {
+        index = i;
+        break;
+      }
+    }
+
+    console.log(index);
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="
+    playgame('heads');
+  ">heads</button>
+
+
+  <button onclick="
+    playgame('tails');
+  ">tails</button>
+
+  <script>
+    function playgame(guess){
+      const namba = Math.random();
+      console.log(namba);
+      let result;
+
+      if (namba < 0.5) {
+        result = 'Heads';
+      } else {
+        result = 'Tails';
+      }
+
+      if (guess === result) {
+        console.log('You Win!');
+      } else {
+        console.log('You Lose!');
+      }
+    }
+    
+  
+    
+
+
+
+    
+  </script>
+
+
+  
+</body>
+</html>

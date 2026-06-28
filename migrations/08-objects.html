@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Objects</title>
+</head>
+<body>
+<script>
+  /*const person = {
+    name: 'Clinton',
+    age: 30,
+    city: 'New York'
+  };
+
+  console.log(person.name);
+  console.log(person.age); 
+  console.log(person.city); 
+
+  person.name = 'Alice Clinton';
+  console.log(person.name);
+
+  delete person.city;
+  console.log(person);
+  */
+ /*
+ const product2 = {
+  name: 'shirt',
+  'delivery-time': '5-7 days',
+  rating : {
+    stars: 4.5,
+    count: 67,
+  },
+  fun: function function1(){
+    console.log('This is a function inside an object');
+  }
+ }
+ console.log(product2['delivery-time']);
+ console.log(product2.rating.stars);
+ console.log(product2.rating.count);
+ product2.fun();
+
+ console.log(typeof console);
+ console.log(typeof console.log); // => methods are functions that are properties of an object
+
+
+ console.log(JSON.stringify(product2)); // converts the object to a JSON string
+
+ const product2JSON = JSON.stringify(product2);
+ console.log(JSON.parse(product2JSON )); // converts the JSON string back to an object
+ */
+
+ console.log('hello'.length); // => 5, length is a property of the string object
+ console.log('hello'.toUpperCase()); // => 'HELLO', toUpperCase is a method of the string object
+ console.log('hello'.toLowerCase()); // => 'hello', toLowerCase is a method of the string object
+ console.log('hello'.indexOf('l')); // => 2, indexOf is a method of the string object
+ console.log('hello'.indexOf('z')); // => -1, indexOf returns -1 if the string is not found
+ console.log('hello'.indexOf('e')); // => 1, indexOf returns the index of the first occurrence of the string
+ console.log('hello'.indexOf('l', 3)); // => 3, indexOf can take a second argument that specifies the starting index for the search
+
+ const object1 = {
+  message: 'Niaje!',
+ };
+ const object2 = object1;
+
+ object1.message ='copy cat';
+ console.log(object1); // => 'copy cat', object1.message is changed to 'copy cat'
+ console.log(object2); // => 'copy cat', object2.message is also changed to 'copy cat' because object1 and object2 reference the same object in memory
+
+ const object3 = {
+  message: 'Niaje!',
+ };
+
+ console.log(object1 === object2); // => true, object1 and object2 reference the same object in memory
+ console.log(object1 === object3);
+
+ const object4 = {
+  message: 'Niaje!',
+ };
+ /*const message = object4.message;*/ // message is a primitive value, not an object
+ const {message} = object4;
+console.log(message);
+
+const object5 = {
+  /*message: message,*/
+  message,// message is a variable that holds the value of object4.message
+  //method: function function1(){
+   // console.log('This is a method inside an object');
+  //}
+  method (){
+    console.log('This is a method inside an object');
+  }
+}
+console.log(object5); // => 'Niaje!', object5.message is the value of the message variable, which is the value of object4.message
+object5.method(); // => 'This is a method inside an object', object5.method is a function that is a property of the object5 object
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

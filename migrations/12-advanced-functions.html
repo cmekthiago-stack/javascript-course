@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Advanced Functions</title>  
+</head>
+<body>
+  <button onclick="" class="js-button" style="border-radius: 50%; padding: 10px;">Submit</button>
+
+  <script> 
+  /*
+  const buttonElement = document.querySelector('.js-button');  
+
+  const eventListener =  () => {console.log(("Button clicked!"));
+}
+
+  buttonElement.addEventListener("click", eventListener);
+  buttonElement.removeEventListener("click", eventListener);
+  buttonElement.addEventListener("click", () => {
+    console.log("Click 2!");
+  }); 
+   buttonElement.addEventListener("click", () => {
+    console.log("Hallowen!");
+  }); 
+  */
+  
+  /*
+  function greeting(){
+    console.log('HEY bebe ❤️😘');
+  }
+greeting ();
+
+const function1 = function greeting (){
+  console.log('Hey side chick🤣🤣sa unajam y 🥱😏');
+}
+console.log(function1);
+console.log(typeof function1)
+function1();
+
+const that = {
+  num: 23,
+  fun: function(){
+    console.log('Come tomorrow, heee');
+  }
+}
+that.fun();
+
+function display(param){
+  console.log(param);
+}
+display(300);
+
+function run(param){
+  param ();
+}                        //passing a function into another function
+run( function (){
+  console.log('Hey, I am running')
+});
+*/
+/*
+setTimeout(function(){
+  console.log('Two seconds to go,, hurry up');
+}, 2000);
+
+console.log('Enda choo');
+console.log('Enda loo');
+
+setInterval(function(){
+  console.log('Hey, I am running');
+},2000);
+*/
+/*
+[
+  'Wake up',
+  'Brush your teeth',
+  'Have breakfast',
+  'Go to work',
+  'Go to gym',
+  'Go to bed'
+].forEach( (value, index) => {
+  if(value === 'Go to work'){
+    return;  // return haas replaced continue;
+  }
+  console.log(index);
+  console.log(value);
+});
+
+
+
+const arrowFunction = () => {
+  console.log('hello');
+}
+arrowFunction();
+
+const arowFunction = (param) => {
+  console.log(param + 4);
+}
+arowFunction(6);
+
+const asowFunction = param => {
+  console.log(param + 4);
+}
+asowFunction(10);
+
+const swiftFunction = () =>  14 + 20 ;
+console.log(swiftFunction ());
+
+const objec10 = {
+  method: ()=> {
+
+  },
+  method2(){
+
+  }
+};
+*/
+
+console.log([1, 3 -10, 4, 12, -7].filter((value, index) => {
+  /*
+  if(value >= 0){
+    return true
+  } else {
+    return false
+  }
+  */
+  return value >= 0;
+}));
+
+console.log([10, 23, 52, 63, 89].map((value, index) => {
+  return value * 2;
+}));
+
+console.log([10, 23, 52, 63, 89].map(value =>  value * 2 )); //cleaner code
+  </script>
+  
+</body>
+</html>

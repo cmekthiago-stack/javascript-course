@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <button class="js-button" onclick="
+      updateButton();
+    ">Start</button>
+
+    <p class="js-message"></p>
+
+    <script>
+      function updateButton() {
+        const displayMessage = document.querySelector('.js-message')
+        messageElement.innerHTML = 'Added';        
+        
+        setTimeout(function() {
+          messageElement.innerHTML = '';
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>

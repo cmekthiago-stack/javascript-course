@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>praco</title>
+  <style>
+    .add-to-cart {
+      background-color: rgb(255, 216, 20);
+      color: black;
+      padding: 10px 60px;
+      border: none;
+      border-radius: 35px;
+      font-size: 20px;
+      cursor: pointer;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .request-uber {
+      background-color: rgb(0, 0, 0);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      display: inline-block;      
+    }
+
+    .schedule-later {
+      background-color: rgb(230, 230, 230);
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      display: inline-block;      
+    }
+   </style> 
+</head>
+<body>
+  <button class="add-to-cart">Add to Cart</button>
+
+  <button class="request-uber">Request now</button>
+
+  <button class="schedule-later">Schedule for later</button> 
+  
+
+  <button class="js-button">Test</button>
+
+  <script>
+    const button = document.querySelector('.js-button');
+    button.classList.contains('js-button');
+    console.log(button.classList.contains('js-button'));
+
+    
+  </script> 
+
+</body>
+</html>
