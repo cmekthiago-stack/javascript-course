@@ -26,21 +26,8 @@
 
     document.querySelector('.js-auto-play-button').
     addEventListener('click', () => {
-      function autoPlay () {
-      if(!isAutoPlaying){
-         intervalId = setInterval( () => {
-        const playerMove = pickComputerMove();
-        playGame(playerMove);
-      }, 1000);
-      isAutoPlaying = true;
-      } else {
-        clearInterval(intervalId);
-        isAutoPlaying = false;
-      }
-    }
-    
-      
-    })
+        autoPlay();
+    });
     function autoPlay () {
       if(!isAutoPlaying){
          intervalId = setInterval( () => {
@@ -90,7 +77,7 @@
 
       if(playerMove === 'Scissors'){            
           if (computerMove === 'Rock'){
-            result = 'lose';
+            result = 'You lose';
           } else if (computerMove === 'Paper'){
             result = 'You win';
           } else if (computerMove === 'Scissors'){
@@ -108,11 +95,11 @@
           
       } else if (playerMove === 'Rock'){
           if (computerMove === 'Rock'){
-              result = 'Tie';
+              result = 'You tie';
             } else if (computerMove === 'Paper'){
               result = 'You lose';
             } else if (computerMove === 'Scissors'){
-              result = 'You Win';
+              result = 'You win';
             }
       }
 
